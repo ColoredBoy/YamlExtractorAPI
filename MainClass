@@ -1,0 +1,21 @@
+package dz.coloredboy;
+
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class MainClass extends JavaPlugin {
+
+	@Override
+	public void onEnable() {
+		LogMessage("§aYamlExtractorAPI plugin On !");
+	}
+
+	@Override
+	public void onDisable() {
+		LogMessage("§aYamlExtractorAPI plugin On !");
+	}
+	
+	public static void LogMessage(String message) {
+		Bukkit.getServer().getConsoleSender().sendMessage(message);
+	}
+}
